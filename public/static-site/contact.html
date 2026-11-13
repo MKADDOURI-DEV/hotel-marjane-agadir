@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; réservations — Hôtel Marjane Agadir</title>
+  <meta name="description" content="Contactez l'Hôtel Marjane Agadir : Boulevard du 20 Août, Agadir. Téléphone, WhatsApp et e-mail pour les réservations et informations.">
+  <meta name="theme-color" content="#F9F6F2">
+  <link rel="canonical" href="contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact &amp; réservations — Hôtel Marjane Agadir">
+  <meta property="og:description" content="Écrivez-nous, appelez-nous ou écrivez sur WhatsApp : nous répondons rapidement.">
+  <meta property="og:image" content="assets/images/breakfast.png">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html" aria-label="Hôtel Marjane Agadir — accueil"><span class="l1">Hôtel</span><span class="l2">MARJANE</span><span class="l3">Agadir</span></a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="about.html" data-i18n="nav.about">L'hôtel</a>
+        <a href="rooms.html" data-i18n="nav.rooms">Chambres</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="offers.html" data-i18n="nav.offers">Offres</a>
+        <a href="gallery.html" data-i18n="nav.gallery">Galerie</a>
+        <a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" aria-label="Langue">
+          <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="ar" aria-pressed="false">ع</button>
+        </div>
+        <a class="btn btn-gold btn-sm" href="#contact-form" data-i18n="common.book">Réserver</a>
+        <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobile-menu">
+    <a class="m-link" href="index.html" data-i18n="nav.home">Accueil</a>
+    <a class="m-link" href="about.html" data-i18n="nav.about">L'hôtel</a>
+    <a class="m-link" href="rooms.html" data-i18n="nav.rooms">Chambres</a>
+    <a class="m-link" href="services.html" data-i18n="nav.services">Services</a>
+    <a class="m-link" href="offers.html" data-i18n="nav.offers">Offres</a>
+    <a class="m-link" href="gallery.html" data-i18n="nav.gallery">Galerie</a>
+    <a class="m-link" href="contact.html" data-i18n="nav.contact">Contact</a>
+    <div class="lang">
+      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="ar" aria-pressed="false">ع</button>
+    </div>
+    <a class="btn btn-gold" href="#contact-form" data-i18n="common.book">Réserver</a>
+  </div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap split">
+        <div>
+          <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+          <h1 class="h1" data-i18n="contact.title">Écrivez-nous</h1>
+          <p class="lead" data-i18n="contact.intro">Une question sur une chambre, un événement, un transfert ? Nous répondons du lundi au dimanche, de 8h à 21h.</p>
+          <p class="city" data-i18n="brand.city">Agadir · Maroc</p>
+        </div>
+        <div class="arch"><img src="assets/images/breakfast.png" alt="Petit-déjeuner sur la terrasse" width="800" height="1000" fetchpriority="high"></div>
+      </div>
+    </section>
+
+    <section class="section line">
+      <div class="wrap contact-grid">
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="row">
+            <div class="field">
+              <label for="cf-name" data-i18n="contact.name">Nom complet</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" aria-describedby="err-name">
+              <p class="form-error" id="err-name"></p>
+            </div>
+            <div class="field">
+              <label for="cf-email" data-i18n="contact.email">Adresse e-mail</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" aria-describedby="err-email">
+              <p class="form-error" id="err-email"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="cf-phone" data-i18n="contact.phone">Téléphone</label>
+              <input type="tel" id="cf-phone" name="phone" autocomplete="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-message" data-i18n="contact.message">Votre message</label>
+            <textarea id="cf-message" name="message" rows="5" aria-describedby="err-message"></textarea>
+            <p class="form-error" id="err-message"></p>
+          </div>
+          <button class="btn" type="submit" data-i18n="contact.submit">Envoyer le message</button>
+          <p class="notice" id="contact-notice" role="status" hidden data-i18n="contact.notice">L'envoi automatique n'est pas encore configuré sur ce site.</p>
+        </form>
+
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="contact.direct">Nous joindre directement</span>
+          <div class="info-list">
+            <div><p class="k" data-i18n="location.addressLabel">Adresse</p><p class="v">Boulevard du 20 Août, Agadir 80000, Maroc</p></div>
+            <div><p class="k" data-i18n="common.call">Appeler</p><p class="v"><a href="tel:+212528840000">+212 528 84 00 00</a></p></div>
+            <div><p class="k" data-i18n="common.email">E-mail</p><p class="v"><a href="mailto:reservation@hotelmarjane-agadir.ma">reservation@hotelmarjane-agadir.ma</a></p></div>
+            <div><p class="k" data-i18n="common.whatsapp">WhatsApp</p><p class="v"><a href="https://wa.me/212661234567" target="_blank" rel="noopener noreferrer">+212 661 23 45 67</a></p></div>
+            <div><p class="k" data-i18n="location.hoursLabel">Arrivée / Départ</p><p class="v" data-i18n="location.hours">Arrivée dès 14h00 · Départ jusqu'à 12h00</p></div>
+            <div><p class="k" data-i18n="contact.reply">Réponse sous 24h</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="wrap split">
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="location.eyebrow">Nous trouver</span>
+          <h2 class="h2" data-i18n="location.title">Au cœur d'Agadir, à dix minutes de la plage</h2>
+          <p class="lead" data-i18n="location.text">Boulevard du 20 Août, entre le marché et la promenade.</p>
+          <p style="margin-top:24px"><a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Marjane+Agadir" target="_blank" rel="noopener noreferrer" data-i18n="location.directions">Itinéraire</a></p>
+        </div>
+        <div class="reveal">
+          <iframe class="map" title="Carte — Hôtel Marjane Agadir" src="https://maps.google.com/maps?q=Hotel%20Marjane%20Agadir&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Hôtel Marjane Agadir"><span class="l1">Hôtel</span><span class="l2">MARJANE</span><span class="l3">Agadir</span></a>
+        <p class="tagline" data-i18n="footer.tagline">Un hôtel boutique à Agadir, entre patio ombragé et lumière de l'Atlantique.</p>
+      </div>
+      <div>
+        <h2 data-i18n="footer.explore">Explorer</h2>
+        <ul>
+          <li><a href="about.html" data-i18n="nav.about">L'hôtel</a></li>
+          <li><a href="rooms.html" data-i18n="nav.rooms">Chambres</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="offers.html" data-i18n="nav.offers">Offres</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Galerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="footer.contactTitle">Contact</h2>
+        <ul>
+          <li>Boulevard du 20 Août<br>Agadir 80000, Maroc</li>
+          <li><a href="tel:+212528840000">+212 528 84 00 00</a></li>
+          <li><a href="mailto:reservation@hotelmarjane-agadir.ma">reservation@hotelmarjane-agadir.ma</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="footer.booking">Réservation &amp; informations</h2>
+        <ul>
+          <li data-i18n="location.hours">Arrivée dès 14h00 · Départ jusqu'à 12h00</li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="about.html#legal" data-i18n="footer.legal">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© <span data-year>2026</span> Hôtel Marjane Agadir. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+      <p data-i18n="brand.city">Agadir · Maroc</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/212661234567?text=Bonjour%20H%C3%B4tel%20Marjane" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </a>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

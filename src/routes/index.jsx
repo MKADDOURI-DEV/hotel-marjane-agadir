@@ -1,21 +1,39 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { getServerInfo } from "@/lib/server-fns";
+import HeroSection from "@/components/HeroSection";
+import BookingBar from "@/components/BookingBar";
+import AboutTeaser from "@/components/sections/AboutTeaser";
+import RoomsTeaser from "@/components/sections/RoomsTeaser";
+import ServicesGrid from "@/components/sections/ServicesGrid";
+import OffersTeaser from "@/components/sections/OffersTeaser";
+import GalleryTeaser from "@/components/sections/GalleryTeaser";
+import LocationSection from "@/components/sections/LocationSection";
 
 export const Route = createFileRoute("/")({
-  loader: () => getServerInfo(),
-  head: () => ({ meta: [{ title: "Base44 App" }] }),
+  head: () => ({
+    meta: [
+      { title: "Hôtel Marjane Agadir — Boutique hotel by the Atlantic" },
+      {
+        name: "description",
+        content:
+          "A boutique hotel in the heart of Agadir: rooms and suites, pool, hammam and a Moroccan table, ten minutes from the beach.",
+      },
+      { property: "og:title", content: "Hôtel Marjane Agadir" },
+    ],
+  }),
   component: HomePage,
 });
 
 function HomePage() {
-  // Undefined for a moment while a hot reload swaps this page before its loader runs again.
-  const { renderedAt } = Route.useLoaderData() ?? {};
   return (
-    <main className="mx-auto max-w-5xl space-y-4 px-4 py-8">
-      <h1 className="text-3xl font-semibold tracking-tight">Your app starts here</h1>
-      <p className="text-muted-foreground">
-        Server-rendered at <time dateTime={renderedAt}>{renderedAt}</time>.
-      </p>
+    <main>
+      <HeroSection />
+      <BookingBar />
+      <AboutTeaser />
+      <RoomsTeaser />
+      <ServicesGrid />
+      <OffersTeaser />
+      <GalleryTeaser />
+      <LocationSection />
     </main>
   );
 }

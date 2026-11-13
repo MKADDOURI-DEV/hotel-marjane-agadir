@@ -1,0 +1,7 @@
+# robots.txt — Hôtel Marjane Agadir
+# Replace the domain below with your real domain once the site is deployed.
+User-agent: *
+Allow: /
+Disallow: /assets/js/translations.js
+
+Sitemap: https://www.hotelmarjane-agadir.ma/sitemap.xml

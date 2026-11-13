@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace https://www.hotelmarjane-agadir.ma with your real domain after deployment. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.hotelmarjane-agadir.ma/index.html</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.hotelmarjane-agadir.ma/about.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.hotelmarjane-agadir.ma/rooms.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.hotelmarjane-agadir.ma/services.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.hotelmarjane-agadir.ma/offers.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.hotelmarjane-agadir.ma/gallery.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.hotelmarjane-agadir.ma/contact.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+</urlset>
