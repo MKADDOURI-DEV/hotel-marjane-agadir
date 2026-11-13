@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { usePageMeta } from "@/lib/usePageMeta";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { contact, images } from "@/lib/site-data";
@@ -7,21 +7,11 @@ import ContactForm from "@/components/ContactForm";
 import LocationSection from "@/components/sections/LocationSection";
 import Reveal from "@/components/Reveal";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact & reservations — Hôtel Marjane Agadir" },
-      {
-        name: "description",
-        content:
-          "Contact Hôtel Marjane Agadir: Boulevard du 20 Août, Agadir. Phone, WhatsApp and email for reservations and information.",
-      },
-    ],
-  }),
-  component: ContactPage,
-});
-
-function ContactPage() {
+export default function ContactPage() {
+  usePageMeta(
+    "Contact & reservations — Hôtel Marjane Agadir",
+    "Contact Hôtel Marjane Agadir: Boulevard du 20 Août, Agadir. Phone, WhatsApp and email for reservations and information."
+  );
   const { t } = useLanguage();
 
   const details = [

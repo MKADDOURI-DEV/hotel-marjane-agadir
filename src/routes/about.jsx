@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { usePageMeta } from "@/lib/usePageMeta";
 import { Image } from "@/components/ui/image";
 import { useLanguage } from "@/lib/i18n";
 import { images } from "@/lib/site-data";
@@ -6,21 +6,11 @@ import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "The hotel — Hôtel Marjane Agadir" },
-      {
-        name: "description",
-        content:
-          "A Moroccan boutique hotel in Agadir: palm-shaded patio, 32 rooms and suites, hammam and Moroccan table, ten minutes from the beach.",
-      },
-    ],
-  }),
-  component: AboutPage,
-});
-
-function AboutPage() {
+export default function AboutPage() {
+  usePageMeta(
+    "The hotel — Hôtel Marjane Agadir",
+    "A Moroccan boutique hotel in Agadir: palm-shaded patio, 32 rooms and suites, hammam and Moroccan table, ten minutes from the beach."
+  );
   const { t } = useLanguage();
 
   const stats = [

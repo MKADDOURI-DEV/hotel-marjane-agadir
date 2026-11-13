@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { NAV_ITEMS, contact, whatsappLink } from "@/lib/site-data";
@@ -89,7 +89,7 @@ export default function SiteFooter() {
           >
             {t("common.whatsapp")}
           </a>
-          <Link to="/about" hash="legal" className="mt-4 inline-block text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">
+          <Link to="/about#legal" className="mt-4 inline-block text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">
             {t("footer.legal")}
           </Link>
         </div>

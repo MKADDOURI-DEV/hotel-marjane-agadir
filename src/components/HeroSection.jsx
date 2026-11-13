@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Image } from "@/components/ui/image";
 import { useLanguage } from "@/lib/i18n";
 import { images } from "@/lib/site-data";

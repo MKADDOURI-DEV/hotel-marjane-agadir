@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "@tanstack/react-router";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { NAV_ITEMS, LANGS, contact } from "@/lib/site-data";
@@ -50,18 +50,17 @@ export default function SiteHeader() {
 
         <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
           {NAV_ITEMS.map((item) => (
-            <Link
+            <NavLink
               key={item.to}
               to={item.to}
-              className="nav-link"
-              activeProps={{ className: "nav-link text-foreground" }}
-              activeOptions={{ exact: item.to === "/" }}
+              end={item.to === "/"}
+              className={({ isActive }) => (isActive ? "nav-link text-foreground" : "nav-link")}
             >
               {t(item.key)}
               {pathname === item.to && (
                 <span className="absolute -bottom-2 left-0 h-px w-full bg-accent" />
               )}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 

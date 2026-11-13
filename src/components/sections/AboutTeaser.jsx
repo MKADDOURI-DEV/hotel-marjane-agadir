@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Image } from "@/components/ui/image";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";

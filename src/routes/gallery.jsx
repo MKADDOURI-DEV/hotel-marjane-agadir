@@ -1,25 +1,15 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { usePageMeta } from "@/lib/usePageMeta";
 import { useLanguage } from "@/lib/i18n";
 import { images } from "@/lib/site-data";
 import PageHero from "@/components/PageHero";
 import GalleryGrid from "@/components/GalleryGrid";
 import Reveal from "@/components/Reveal";
 
-export const Route = createFileRoute("/gallery")({
-  head: () => ({
-    meta: [
-      { title: "Photo gallery — Hôtel Marjane Agadir" },
-      {
-        name: "description",
-        content:
-          "A photo tour of Hôtel Marjane Agadir: patios, rooms and suites, the pool, the hammam, the terrace table and Agadir light.",
-      },
-    ],
-  }),
-  component: GalleryPage,
-});
-
-function GalleryPage() {
+export default function GalleryPage() {
+  usePageMeta(
+    "Photo gallery — Hôtel Marjane Agadir",
+    "A photo tour of Hôtel Marjane Agadir: patios, rooms and suites, the pool, the hammam, the terrace table and Agadir light."
+  );
   const { t } = useLanguage();
 
   return (

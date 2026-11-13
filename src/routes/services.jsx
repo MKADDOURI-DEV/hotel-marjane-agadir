@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { usePageMeta } from "@/lib/usePageMeta";
 import { Image } from "@/components/ui/image";
 import { useLanguage } from "@/lib/i18n";
 import { images } from "@/lib/site-data";
@@ -7,21 +7,11 @@ import ServicesGrid from "@/components/sections/ServicesGrid";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
-export const Route = createFileRoute("/services")({
-  head: () => ({
-    meta: [
-      { title: "Hotel services — Hôtel Marjane Agadir" },
-      {
-        name: "description",
-        content:
-          "24-hour concierge, Moroccan restaurant and terrace breakfast, pool, traditional hammam spa, fibre Wi-Fi and airport transfers in Agadir.",
-      },
-    ],
-  }),
-  component: ServicesPage,
-});
-
-function ServicesPage() {
+export default function ServicesPage() {
+  usePageMeta(
+    "Hotel services — Hôtel Marjane Agadir",
+    "24-hour concierge, Moroccan restaurant and terrace breakfast, pool, traditional hammam spa, fibre Wi-Fi and airport transfers in Agadir."
+  );
   const { t } = useLanguage();
 
   return (

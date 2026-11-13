@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { usePageMeta } from "@/lib/usePageMeta";
 import { useLanguage } from "@/lib/i18n";
 import { ROOMS, images } from "@/lib/site-data";
 import PageHero from "@/components/PageHero";
@@ -6,20 +6,6 @@ import RoomCard from "@/components/RoomCard";
 import BookingBar from "@/components/BookingBar";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
-
-export const Route = createFileRoute("/rooms")({
-  head: () => ({
-    meta: [
-      { title: "Rooms & suites — Hôtel Marjane Agadir" },
-      {
-        name: "description",
-        content:
-          "Classic rooms, ocean-view prestige rooms, junior suites and family suites — linen bedding, artisan woodwork and Atlantic light in Agadir.",
-      },
-    ],
-  }),
-  component: RoomsPage,
-});
 
 const AMENITIES = [
   "room.amenity.bath",
@@ -30,7 +16,11 @@ const AMENITIES = [
   "room.amenity.wifi",
 ];
 
-function RoomsPage() {
+export default function RoomsPage() {
+  usePageMeta(
+    "Rooms & suites — Hôtel Marjane Agadir",
+    "Classic rooms, ocean-view prestige rooms, junior suites and family suites — linen bedding, artisan woodwork and Atlantic light in Agadir."
+  );
   const { t } = useLanguage();
 
   return (

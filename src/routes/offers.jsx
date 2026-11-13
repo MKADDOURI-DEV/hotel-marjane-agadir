@@ -1,24 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { usePageMeta } from "@/lib/usePageMeta";
 import { useLanguage } from "@/lib/i18n";
 import { images } from "@/lib/site-data";
 import PageHero from "@/components/PageHero";
 import OffersTeaser from "@/components/sections/OffersTeaser";
 
-export const Route = createFileRoute("/offers")({
-  head: () => ({
-    meta: [
-      { title: "Offers & packages — Hôtel Marjane Agadir" },
-      {
-        name: "description",
-        content:
-          "Atlantic escape, spa retreat and long-stay packages at Hôtel Marjane Agadir: ocean-view rooms, hammam and Moroccan breakfast.",
-      },
-    ],
-  }),
-  component: OffersPage,
-});
-
-function OffersPage() {
+export default function OffersPage() {
+  usePageMeta(
+    "Offers & packages — Hôtel Marjane Agadir",
+    "Atlantic escape, spa retreat and long-stay packages at Hôtel Marjane Agadir: ocean-view rooms, hammam and Moroccan breakfast."
+  );
   const { t } = useLanguage();
 
   return (

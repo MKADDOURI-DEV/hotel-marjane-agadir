@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { ROOMS } from "@/lib/site-data";
