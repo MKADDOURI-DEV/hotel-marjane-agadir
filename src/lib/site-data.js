@@ -51,36 +51,28 @@ export const NAV_ITEMS = [
 
 export const ROOMS = [
   {
-    id: "classic",
-    image: images.suite,
+    id: "single",
+    image: images.junior,
     price: 850,
     size: "24 m²",
-    guests: 2,
-    amenities: ["room.amenity.linen", "room.amenity.wifi", "room.amenity.ac", "room.amenity.breakfast"],
+    guests: 1,
+    amenities: ["room.amenity.linen", "room.amenity.wifi", "room.amenity.ac", "room.amenity.bath"],
   },
   {
-    id: "ocean",
-    image: images.ocean,
+    id: "double",
+    image: images.suite,
     price: 1280,
     size: "30 m²",
     guests: 2,
-    amenities: ["room.amenity.sea", "room.amenity.balcony", "room.amenity.wifi", "room.amenity.minibar"],
+    amenities: ["room.amenity.linen", "room.amenity.tv", "room.amenity.wifi", "room.amenity.minibar"],
   },
   {
-    id: "junior",
-    image: images.junior,
+    id: "triple",
+    image: images.family,
     price: 1650,
     size: "38 m²",
     guests: 3,
-    amenities: ["room.amenity.terrace", "room.amenity.sofa", "room.amenity.wifi", "room.amenity.breakfast"],
-  },
-  {
-    id: "family",
-    image: images.family,
-    price: 2100,
-    size: "48 m²",
-    guests: 4,
-    amenities: ["room.amenity.twoRooms", "room.amenity.family", "room.amenity.wifi", "room.amenity.ac"],
+    amenities: ["room.amenity.family", "room.amenity.bath", "room.amenity.wifi", "room.amenity.breakfast"],
   },
 ];
 
@@ -111,7 +103,7 @@ export const GALLERY = [
 
 export const OFFERS = [
   { id: "atlantic", image: images.ocean, discount: "-15%", price: 2850, nights: 3 },
-  { id: "spa", image: images.hammam, discount: "-10%", price: 2200, nights: 2 },
+  { id: "weekend", image: images.suite, discount: "-10%", price: 2200, nights: 2 },
   { id: "longstay", image: images.junior, discount: "-20%", price: 5400, nights: 7 },
 ];
 

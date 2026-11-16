@@ -1,10 +1,10 @@
-import { ConciergeBell, UtensilsCrossed, Waves, Sparkles, Wifi, CarFront } from "lucide-react";
+import { ConciergeBell, UtensilsCrossed, Wifi } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 
-const ICONS = [ConciergeBell, UtensilsCrossed, Waves, Sparkles, Wifi, CarFront];
-const KEYS = ["s1", "s2", "s3", "s4", "s5", "s6"];
+const ICONS = [ConciergeBell, UtensilsCrossed, Wifi];
+const KEYS = ["s1", "s2", "s5"];
 
 export default function ServicesGrid({ showHeading = true, background = "bg-background" }) {
   const { t } = useLanguage();

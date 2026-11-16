@@ -7,7 +7,7 @@ import OffersTeaser from "@/components/sections/OffersTeaser";
 export default function OffersPage() {
   usePageMeta(
     "Offers & packages — Hôtel Marjane Agadir",
-    "Atlantic escape, spa retreat and long-stay packages at Hôtel Marjane Agadir: ocean-view rooms, hammam and Moroccan breakfast."
+    "Weekend and long-stay packages at Hôtel Marjane Agadir: single, double and triple rooms with Moroccan breakfast."
   );
   const { t } = useLanguage();
 

@@ -19,7 +19,7 @@ const AMENITIES = [
 export default function RoomsPage() {
   usePageMeta(
     "Rooms & suites — Hôtel Marjane Agadir",
-    "Classic rooms, ocean-view prestige rooms, junior suites and family suites — linen bedding, artisan woodwork and Atlantic light in Agadir."
+    "Single, double and triple rooms at Hôtel Marjane Agadir: linen bedding, private bathrooms and quiet comfort minutes from the beach."
   );
   const { t } = useLanguage();
 
@@ -30,7 +30,7 @@ export default function RoomsPage() {
         title={t("rooms.title")}
         intro={t("rooms.intro")}
         image={images.ocean}
-        alt={t("room.ocean.name")}
+        alt={t("rooms.title")}
       />
 
       <section className="border-t border-border py-20 sm:py-28">
