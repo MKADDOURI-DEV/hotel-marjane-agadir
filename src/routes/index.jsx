@@ -4,7 +4,6 @@ import BookingBar from "@/components/BookingBar";
 import AboutTeaser from "@/components/sections/AboutTeaser";
 import RoomsTeaser from "@/components/sections/RoomsTeaser";
 import ServicesGrid from "@/components/sections/ServicesGrid";
-import OffersTeaser from "@/components/sections/OffersTeaser";
 import GalleryTeaser from "@/components/sections/GalleryTeaser";
 import LocationSection from "@/components/sections/LocationSection";
 
@@ -21,7 +20,6 @@ export default function HomePage() {
       <AboutTeaser />
       <RoomsTeaser />
       <ServicesGrid />
-      <OffersTeaser />
       <GalleryTeaser />
       <LocationSection />
     </main>

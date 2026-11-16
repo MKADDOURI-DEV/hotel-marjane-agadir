@@ -44,7 +44,6 @@ export const NAV_ITEMS = [
   { to: "/about", key: "nav.about" },
   { to: "/rooms", key: "nav.rooms" },
   { to: "/services", key: "nav.services" },
-  { to: "/offers", key: "nav.offers" },
   { to: "/gallery", key: "nav.gallery" },
   { to: "/contact", key: "nav.contact" },
 ];
@@ -99,12 +98,6 @@ export const GALLERY = [
   { src: images.junior, alt: "Purple guest room with twin beds and a balcony" },
   { src: `${HOTEL_PHOTOS}_DSC6515-HDR-Pano.jpg`, alt: "Guest bathroom with a bathtub and blue shower curtain" },
   { src: `${HOTEL_PHOTOS}_DSC6527-HDR-Pano-2.jpg`, alt: "Guest bathroom with a wooden door and blue shower curtain" },
-];
-
-export const OFFERS = [
-  { id: "atlantic", image: images.ocean, discount: "-15%", price: 2850, nights: 3 },
-  { id: "weekend", image: images.suite, discount: "-10%", price: 2200, nights: 2 },
-  { id: "longstay", image: images.junior, discount: "-20%", price: 5400, nights: 7 },
 ];
 
 export const LANGS = [

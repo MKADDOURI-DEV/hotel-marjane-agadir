@@ -13,7 +13,6 @@ import HomePage from "@/routes/index";
 import AboutPage from "@/routes/about";
 import RoomsPage from "@/routes/rooms";
 import ServicesPage from "@/routes/services";
-import OffersPage from "@/routes/offers";
 import GalleryPage from "@/routes/gallery";
 import ContactPage from "@/routes/contact";
 
@@ -31,7 +30,6 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/rooms" element={<RoomsPage />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/offers" element={<OffersPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<NotFound />} />
