@@ -53,16 +53,16 @@ export default function AboutPage() {
           <Reveal delay={120} className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
             <div className="overflow-hidden arch-top bg-foreground/10">
               <Image
-                src={images.terrace}
-                alt={t("hero.strip3")}
+                src={images.balcony}
+                alt={t("photo.balcony")}
                 fittingType="fill"
                 className="aspect-[4/3] w-full object-cover lg:aspect-[4/5]"
               />
             </div>
             <div className="overflow-hidden bg-foreground/10">
               <Image
-                src={images.breakfast}
-                alt={t("services.s2.name")}
+                src={images.cafe}
+                alt={t("hero.strip3")}
                 fittingType="fill"
                 className="aspect-[4/3] w-full object-cover"
               />

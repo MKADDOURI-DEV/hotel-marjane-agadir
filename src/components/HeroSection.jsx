@@ -6,8 +6,8 @@ import { images } from "@/lib/site-data";
 
 const STRIP = [
   { src: images.suite, altKey: "hero.strip1" },
-  { src: images.pool, altKey: "hero.strip2" },
-  { src: images.terrace, altKey: "hero.strip3" },
+  { src: images.lobby, altKey: "hero.strip2" },
+  { src: images.cafe, altKey: "hero.strip3" },
 ];
 
 export default function HeroSection() {

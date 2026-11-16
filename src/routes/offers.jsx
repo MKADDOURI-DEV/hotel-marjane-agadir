@@ -17,8 +17,8 @@ export default function OffersPage() {
         eyebrow={t("offers.eyebrow")}
         title={t("offers.title")}
         intro={t("offers.intro")}
-        image={images.rooftop}
-        alt={t("offers.o3.name")}
+        image={images.balcony}
+        alt={t("photo.balcony")}
       />
       <OffersTeaser showHeading={false} />
     </main>

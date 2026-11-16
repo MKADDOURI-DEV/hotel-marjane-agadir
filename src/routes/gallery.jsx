@@ -8,7 +8,7 @@ import Reveal from "@/components/Reveal";
 export default function GalleryPage() {
   usePageMeta(
     "Photo gallery — Hôtel Marjane Agadir",
-    "A photo tour of Hôtel Marjane Agadir: patios, rooms and suites, the pool, the hammam, the terrace table and Agadir light."
+    "Real photos of Hôtel Marjane Agadir: guest rooms, reception, café, private balconies and bathrooms."
   );
   const { t } = useLanguage();
 
@@ -18,8 +18,8 @@ export default function GalleryPage() {
         eyebrow={t("gallery.eyebrow")}
         title={t("gallery.title")}
         intro={t("gallery.intro")}
-        image={images.terrace}
-        alt={t("gallery.title")}
+        image={images.cafe}
+        alt={t("hero.strip3")}
       />
 
       <section className="border-t border-border py-16 sm:py-24">

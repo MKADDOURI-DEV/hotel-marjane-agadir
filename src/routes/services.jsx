@@ -20,8 +20,8 @@ export default function ServicesPage() {
         eyebrow={t("services.eyebrow")}
         title={t("services.title")}
         intro={t("services.intro")}
-        image={images.pool}
-        alt={t("services.s3.name")}
+        image={images.lobby}
+        alt={t("hero.strip2")}
       />
 
       <ServicesGrid showHeading={false} background="bg-background" />
@@ -42,16 +42,16 @@ export default function ServicesPage() {
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="overflow-hidden bg-foreground/10">
                 <Image
-                  src={images.breakfast}
-                  alt={t("services.s2.name")}
+                  src={images.cafe}
+                  alt={t("hero.strip3")}
                   fittingType="fill"
                   className="aspect-[4/3] w-full object-cover"
                 />
               </div>
               <div className="overflow-hidden bg-foreground/10">
                 <Image
-                  src={images.rooftop}
-                  alt={t("services.s3.name")}
+                  src={images.balcony}
+                  alt={t("photo.balcony")}
                   fittingType="fill"
                   className="aspect-[4/3] w-full object-cover"
                 />

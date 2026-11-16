@@ -37,6 +37,7 @@ export default function GalleryGrid({ items = GALLERY, className = "" }) {
               src={item.src}
               alt={item.alt}
               fittingType="fill"
+              loading="lazy"
               className="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.05]"
             />
             <span className="absolute inset-0 bg-foreground/0 transition-colors duration-500 group-hover:bg-foreground/25" />

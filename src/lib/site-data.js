@@ -18,16 +18,21 @@ export function whatsappLink(message) {
 }
 
 const CDN = "https://media.base44.com/images/public/6af6fd02760f3e5992735916/";
+// Public hotel photos copied from the main Drive folder, not its subfolders.
+const HOTEL_PHOTOS = "/static-site/assets/images/drive/";
 
 export const images = {
-  suite: `${CDN}f8cd7d3b6_generated_9a67c9a2.png`,
+  suite: `${HOTEL_PHOTOS}_DSC6290-HDR-Pano.jpg`,
   pool: `${CDN}26b73a156_generated_9b902918.png`,
   terrace: `${CDN}2e4576ad8_generated_8ccbae16.png`,
   facade: `${CDN}ecce3e492_generated_2b0bb276.png`,
-  lobby: `${CDN}fa8572e39_generated_2d9e8159.png`,
-  ocean: `${CDN}a95414e31_generated_86f61cec.png`,
-  junior: `${CDN}0a2753f21_generated_04888f04.png`,
-  family: `${CDN}ff6b2a428_generated_31a76694.png`,
+  lobby: `${HOTEL_PHOTOS}_DSC6078-HDR-Pano.jpg`,
+  reception: `${HOTEL_PHOTOS}_DSC6021-HDR.jpg`,
+  cafe: `${HOTEL_PHOTOS}_DSC6108-HDR.jpg`,
+  balcony: `${HOTEL_PHOTOS}_DSC6232-HDR-Pano.jpg`,
+  ocean: `${HOTEL_PHOTOS}_DSC6193-HDR-Pano.jpg`,
+  junior: `${HOTEL_PHOTOS}_DSC6494-HDR-Pano.jpg`,
+  family: `${HOTEL_PHOTOS}_DSC6429-HDR-Pano.jpg`,
   hammam: `${CDN}6343db4a2_generated_9e702731.png`,
   breakfast: `${CDN}ed27996fb_generated_7cfb894e.png`,
   rooftop: `${CDN}b58b7f8fd_generated_300cc42f.png`,
@@ -80,22 +85,34 @@ export const ROOMS = [
 ];
 
 export const GALLERY = [
-  { src: images.lobby, alt: "Carved cedar lobby with brass lanterns" },
-  { src: images.pool, alt: "Hotel pool at golden hour" },
-  { src: images.terrace, alt: "Restaurant terrace set for dinner" },
-  { src: images.suite, alt: "Suite with Moroccan mint tea on the bed" },
-  { src: images.hammam, alt: "Traditional hammam with brass bucket" },
-  { src: images.breakfast, alt: "Moroccan breakfast on the terrace" },
-  { src: images.ocean, alt: "Room with Atlantic ocean view" },
-  { src: images.rooftop, alt: "Rooftop terrace above Agadir bay" },
-  { src: images.beach, alt: "Agadir beach at golden hour" },
-  { src: images.facade, alt: "Hotel facade at dusk" },
+  { src: images.lobby, alt: "Hotel Marjane lobby with blue columns and seating" },
+  { src: images.suite, alt: "Guest room with a double bed and purple balcony curtains" },
+  { src: images.cafe, alt: "Hotel café seating area beneath the central staircase" },
+  { src: images.ocean, alt: "Pink guest room with a double bed and balcony doors" },
+  { src: images.balcony, alt: "Private balcony with a table, chairs and a view across Agadir" },
+  { src: images.family, alt: "Guest room with a double bed and an additional single bed" },
+  { src: images.reception, alt: "Hotel reception counter in the blue lobby" },
+  { src: `${HOTEL_PHOTOS}_DSC6027-HDR.jpg`, alt: "Reception desk and the hotel team" },
+  { src: `${HOTEL_PHOTOS}_DSC6117-HDR.jpg`, alt: "Café counter with blue and white mosaic detailing" },
+  { src: `${HOTEL_PHOTOS}_DSC6214-HDR-Pano.jpg`, alt: "Pink guest room with wooden furniture and purple curtains" },
+  { src: `${HOTEL_PHOTOS}_DSC6266-HDR-Pano.jpg`, alt: "Tiled guest bathroom with a shower and wooden door" },
+  { src: `${HOTEL_PHOTOS}_DSC6311-HDR-Pano.jpg`, alt: "Orange guest room with a double bed and wall-mounted television" },
+  { src: `${HOTEL_PHOTOS}_DSC6361-HDR-Pano.jpg`, alt: "Guest bathroom with a bathtub, washbasin and blue floor tiles" },
+  { src: `${HOTEL_PHOTOS}_DSC6376-HDR-Pano.jpg`, alt: "Guest room with balcony doors, floral bedding and seating" },
+  { src: `${HOTEL_PHOTOS}_DSC6397-HDR-Pano.jpg`, alt: "White tiled bathroom with a bathtub and yellow shower curtain" },
+  { src: `${HOTEL_PHOTOS}_DSC6414-HDR-Pano.jpg`, alt: "Guest room with wooden bedside tables and floral bedding" },
+  { src: `${HOTEL_PHOTOS}_DSC6449-HDR-Pano.jpg`, alt: "Room sitting area with striped armchairs beside the balcony" },
+  { src: `${HOTEL_PHOTOS}_DSC6461-HDR-Pano.jpg`, alt: "Guest room with twin beds and a striped armchair" },
+  { src: `${HOTEL_PHOTOS}_DSC6476-HDR-Pano.jpg`, alt: "Guest bathroom with a bathtub and pale blue tile details" },
+  { src: images.junior, alt: "Purple guest room with twin beds and a balcony" },
+  { src: `${HOTEL_PHOTOS}_DSC6515-HDR-Pano.jpg`, alt: "Guest bathroom with a bathtub and blue shower curtain" },
+  { src: `${HOTEL_PHOTOS}_DSC6527-HDR-Pano-2.jpg`, alt: "Guest bathroom with a wooden door and blue shower curtain" },
 ];
 
 export const OFFERS = [
   { id: "atlantic", image: images.ocean, discount: "-15%", price: 2850, nights: 3 },
   { id: "spa", image: images.hammam, discount: "-10%", price: 2200, nights: 2 },
-  { id: "longstay", image: images.rooftop, discount: "-20%", price: 5400, nights: 7 },
+  { id: "longstay", image: images.junior, discount: "-20%", price: 5400, nights: 7 },
 ];
 
 export const LANGS = [

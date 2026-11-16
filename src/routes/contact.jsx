@@ -27,8 +27,8 @@ export default function ContactPage() {
         eyebrow={t("contact.eyebrow")}
         title={t("contact.title")}
         intro={t("contact.intro")}
-        image={images.breakfast}
-        alt={t("contact.title")}
+        image={images.reception}
+        alt={t("services.s1.name")}
       />
 
       <section className="border-t border-border py-16 sm:py-24">
